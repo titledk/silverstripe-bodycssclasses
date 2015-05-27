@@ -1,0 +1,20 @@
+{
+	"name": "titledk/silverstripe-bodycssclasses",
+	"description": "Helper for page / controller specific styling",
+	"type": "silverstripe-module",
+	"homepage": "https://github.com/titledk/silverstripe-bodycssclasses",
+	"keywords": ["silverstripe", "css", "styling"],
+	"license": "MIT",
+	"authors": [
+		{"name": "Anselm Christophersen","email": "ac@anselm.dk"}
+	],
+	"support": {
+		"issues": "https://github.com/titledk/silverstripe-bodycssclasses"
+	},
+	"require": {
+		"silverstripe/framework": "~3.1"
+	},
+	"extra": {
+		"installer-name": "bodycssclasses"
+	}
+}
