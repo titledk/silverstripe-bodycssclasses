@@ -1,0 +1,7 @@
+---
+Name: bodycssclasses
+After: 'framework/*','cms/*'
+---
+SiteTree:
+  extensions:
+    - BodyCssClassesExtension
