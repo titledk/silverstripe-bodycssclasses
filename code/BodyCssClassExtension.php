@@ -18,7 +18,12 @@ class BodyCssClassesExtension extends DataExtension {
 
 		//we want all possible custom object and controller classes -as sometimes a controller
 		//would extend a special class that the object doesn't extend - or the other way around
-		$objClass = str_replace('_Controller', '', $this->owner->ClassName);
+		$class = $this->owner->ClassName;
+		//class can be overwritten with the "ClassName" method
+		if (method_exists($this->owner, 'ClassName')) {
+			$class = $this->owner->ClassName();
+		}
+		$objClass = str_replace('_Controller', '', $class);
 
 		//if we're on Page, just return "Page".
 		//In order to be able to style "Page" properly, and as all other pages should extend page,
