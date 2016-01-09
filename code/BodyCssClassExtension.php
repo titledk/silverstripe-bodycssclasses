@@ -14,7 +14,7 @@ class BodyCssClassesExtension extends DataExtension {
 	 * Contains all parent classes
 	 * @return string
 	 */
-	public function getBodyCssClasses(){
+	public function getBodyCssClasses() {
 
 		//we want all possible custom object and controller classes -as sometimes a controller
 		//would extend a special class that the object doesn't extend - or the other way around
